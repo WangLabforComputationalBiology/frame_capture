@@ -1,0 +1,418 @@
+{
+ "A_validity": {
+  "per_checkpoint": {
+   "qwen15-base": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "qwen15-sft": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "qwen15-dpo": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "qwen15-dpo_frame": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "qwen15-rlvr": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "llama32-3b-base": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "llama32-3b-instruct": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "llama32-sft": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "llama32-dpo": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "internlm2-base": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "internlm2-chat": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "qwen25-7b-instruct": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "gemma3-4b-it": {
+    "none_frames": 15,
+    "n_frames": 672,
+    "none_rate_frames": 0.0223,
+    "none_perturbs": 7,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0729
+   },
+   "qwen25-7b-base": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "llama31-8b-instruct": {
+    "none_frames": 0,
+    "n_frames": 672,
+    "none_rate_frames": 0.0,
+    "none_perturbs": 0,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0
+   },
+   "mistral-sft": {
+    "none_frames": 2,
+    "n_frames": 672,
+    "none_rate_frames": 0.003,
+    "none_perturbs": 1,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.0104
+   },
+   "zephyr-dpo": {
+    "none_frames": 168,
+    "n_frames": 672,
+    "none_rate_frames": 0.25,
+    "none_perturbs": 16,
+    "n_perturbs": 96,
+    "none_rate_perturbs": 0.1667
+   }
+  },
+  "note": "released records persist normalized option vectors + None flags; raw invalid mass is not stored, so invalid-as-error and invalid-as-explicit-category cannot be recomputed offline; released policy = exclusion + renormalize, applied uniformly",
+  "imputation_stress": {
+   "qwen15-base": {
+    "fs_excl": 0.00802458342949142,
+    "fs_imput": 0.00802458342949142,
+    "cs_excl": 0.4636708851399887,
+    "cs_imput": 0.4636708851399887,
+    "phi_excl": 0.03805554030006639,
+    "phi_imput": 0.03805554030006639,
+    "n_tasks": 48
+   },
+   "qwen15-sft": {
+    "fs_excl": 0.0078029663265343574,
+    "fs_imput": 0.0078029663265343574,
+    "cs_excl": 0.5244776005679238,
+    "cs_imput": 0.5244776005679238,
+    "phi_excl": 0.03195135758998849,
+    "phi_imput": 0.03195135758998849,
+    "n_tasks": 48
+   },
+   "qwen15-dpo": {
+    "fs_excl": 0.015229319893127868,
+    "fs_imput": 0.015229319893127868,
+    "cs_excl": 0.6356263746231053,
+    "cs_imput": 0.6356263746231053,
+    "phi_excl": 0.04414685867531171,
+    "phi_imput": 0.04414685867531171,
+    "n_tasks": 48
+   },
+   "qwen15-dpo_frame": {
+    "fs_excl": 0.007799905066585911,
+    "fs_imput": 0.007799905066585911,
+    "cs_excl": 0.5237101966369022,
+    "cs_imput": 0.5237101966369022,
+    "phi_excl": 0.032778649401876345,
+    "phi_imput": 0.032778649401876345,
+    "n_tasks": 48
+   },
+   "qwen15-rlvr": {
+    "fs_excl": 0.007909311093686816,
+    "fs_imput": 0.007909311093686816,
+    "cs_excl": 0.524540544213634,
+    "cs_imput": 0.524540544213634,
+    "phi_excl": 0.03279451585536826,
+    "phi_imput": 0.03279451585536826,
+    "n_tasks": 48
+   },
+   "llama32-3b-base": {
+    "fs_excl": 0.008109902401900413,
+    "fs_imput": 0.008109902401900413,
+    "cs_excl": 0.36591089477147226,
+    "cs_imput": 0.36591089477147226,
+    "phi_excl": 0.08577623297573013,
+    "phi_imput": 0.08577623297573013,
+    "n_tasks": 48
+   },
+   "llama32-3b-instruct": {
+    "fs_excl": 0.005723562874160328,
+    "fs_imput": 0.005723562874160328,
+    "cs_excl": 0.4703652596225754,
+    "cs_imput": 0.4703652596225754,
+    "phi_excl": 0.043064716551498926,
+    "phi_imput": 0.043064716551498926,
+    "n_tasks": 48
+   },
+   "llama32-sft": {
+    "fs_excl": 0.007114238419026382,
+    "fs_imput": 0.007114238419026382,
+    "cs_excl": 0.3973475706721017,
+    "cs_imput": 0.3973475706721017,
+    "phi_excl": 0.0716354296711172,
+    "phi_imput": 0.0716354296711172,
+    "n_tasks": 48
+   },
+   "llama32-dpo": {
+    "fs_excl": 0.03317388164504749,
+    "fs_imput": 0.03317388164504749,
+    "cs_excl": 0.6279099953544992,
+    "cs_imput": 0.6279099953544992,
+    "phi_excl": 0.07646320751480441,
+    "phi_imput": 0.07646320751480441,
+    "n_tasks": 48
+   },
+   "internlm2-base": {
+    "fs_excl": 0.007421454926765066,
+    "fs_imput": 0.007421454926765066,
+    "cs_excl": 0.19536977040414025,
+    "cs_imput": 0.19536977040414025,
+    "phi_excl": 0.13615332802893473,
+    "phi_imput": 0.13615332802893473,
+    "n_tasks": 48
+   },
+   "internlm2-chat": {
+    "fs_excl": 0.010080710630469772,
+    "fs_imput": 0.010080710630469772,
+    "cs_excl": 0.28182010503012705,
+    "cs_imput": 0.28182010503012705,
+    "phi_excl": 0.14284763805066616,
+    "phi_imput": 0.14284763805066616,
+    "n_tasks": 48
+   },
+   "qwen25-7b-instruct": {
+    "fs_excl": 0.016014860732651497,
+    "fs_imput": 0.016014860732651497,
+    "cs_excl": 0.682885509656178,
+    "cs_imput": 0.682885509656178,
+    "phi_excl": 0.05530686608093329,
+    "phi_imput": 0.05530686608093329,
+    "n_tasks": 48
+   },
+   "gemma3-4b-it": {
+    "fs_excl": 0.014110891118115454,
+    "fs_imput": 0.020809816583918585,
+    "cs_excl": 0.7172932459963873,
+    "cs_imput": 0.6995284574206405,
+    "phi_excl": 0.059660110594722704,
+    "phi_imput": 0.06515837661841713,
+    "n_tasks": 46
+   },
+   "qwen25-7b-base": {
+    "fs_excl": 0.0069724558692677635,
+    "fs_imput": 0.0069724558692677635,
+    "cs_excl": 0.6556906922859785,
+    "cs_imput": 0.6556906922859785,
+    "phi_excl": 0.030074172359548124,
+    "phi_imput": 0.030074172359548124,
+    "n_tasks": 48
+   },
+   "llama31-8b-instruct": {
+    "fs_excl": 0.015279962733005005,
+    "fs_imput": 0.015279962733005005,
+    "cs_excl": 0.4961402699047118,
+    "cs_imput": 0.4961402699047118,
+    "phi_excl": 0.06556877515341812,
+    "phi_imput": 0.06556877515341812,
+    "n_tasks": 48
+   },
+   "mistral-sft": {
+    "fs_excl": 0.006337574468460364,
+    "fs_imput": 0.006433558274497534,
+    "cs_excl": 0.25897459548609497,
+    "cs_imput": 0.2586829648833951,
+    "phi_excl": 0.08400803767009597,
+    "phi_imput": 0.08542090931579506,
+    "n_tasks": 48
+   },
+   "zephyr-dpo": {
+    "fs_excl": 0.03174719148841017,
+    "fs_imput": 0.05054233057608217,
+    "cs_excl": 0.4144251007771729,
+    "cs_imput": 0.3563949758567052,
+    "phi_excl": 0.11179830383219877,
+    "phi_imput": 0.1572803248784977,
+    "n_tasks": 42
+   }
+  },
+  "orderings": {
+   "spearman_FS_excl_vs_imput": 0.982843137254902,
+   "spearman_phi_excl_vs_imput": 0.9926470588235295
+  },
+  "laws_under_imputation": {
+   "floor_band": [
+    0.00697,
+    0.00811
+   ],
+   "floor_cv": 0.0608,
+   "cs_up_all8": {
+    "Qwen SFT": true,
+    "Qwen DPO": true,
+    "Qwen RLVR": true,
+    "Llama SFT": true,
+    "Llama DPO": true,
+    "Llama-Inst": true,
+    "InternLM2-chat": true,
+    "Qwen7B-Inst": true
+   },
+   "dpo_agg_ratio": {
+    "qwen15": 1.95,
+    "llama32": 4.66,
+    "zephyr": 7.86
+   }
+  },
+  "family_none_worst2": {
+   "zephyr-dpo": {
+    "authority": "33/96",
+    "case": "22/96",
+    "peer": "11/96",
+    "persona": "31/144",
+    "verbal": "29/96",
+    "wording": "42/144"
+   },
+   "gemma3-4b-it": {
+    "authority": "0/96",
+    "case": "1/96",
+    "peer": "0/96",
+    "persona": "5/144",
+    "verbal": "0/96",
+    "wording": "9/144"
+   }
+  }
+ },
+ "B_stats": {
+  "loto_spearman_jsd_vs_mi": {
+   "n_pairs_full": 718,
+   "full": 0.9995185028772225,
+   "min": 0.9995029073976442,
+   "max": 0.9995740242450767,
+   "argmin_task": "gold_symbol"
+  },
+  "holm_cs8": {
+   "worst_adjusted_p": 0.00011999880001199988,
+   "all_significant_at_0.05": true
+  },
+  "fingerprint": {
+   "n_within": 28,
+   "n_cross": 50,
+   "within_median": 0.567825971804728,
+   "cross_median": 0.11355559075071428,
+   "perm_p": 9.99990000099999e-06,
+   "jackknife_within_range": [
+    0.5220957867005467,
+    0.6833509267631279
+   ],
+   "jackknife_cross_range": [
+    0.03525337066938996,
+    0.16921569634236763
+   ]
+  },
+  "nf4_vs_bf16_pertask": {
+   "n_checkpoints": 11,
+   "spearman_min": 0.7441380807642205,
+   "spearman_median": 0.9342162396873642,
+   "spearman_max": 0.9549500651324359,
+   "max_abs_delta_max": 0.2599716797314081,
+   "worst_ckpt": "internlm2-chat"
+  },
+  "bootstrap_unit": "t9_final48.boot_ci resamples the 48 per-task values (task-level bootstrap), B=20000"
+ },
+ "C_frames_surface": {
+  "n_template_uses": 672,
+  "char_len_min_max": [
+   38,
+   212
+  ],
+  "char_len_mean": 107.1,
+  "words_min_max": [
+   12,
+   38
+  ],
+  "edit_chars_min_max": [
+   0,
+   110
+  ],
+  "edit_norm_min_max": [
+   0.0,
+   0.639
+  ],
+  "edit_norm_mean": 0.262,
+  "per_frame_mean_edit_norm": [
+   0.0,
+   0.249,
+   0.214,
+   0.515,
+   0.219,
+   0.244,
+   0.258,
+   0.202,
+   0.333,
+   0.27,
+   0.268,
+   0.335,
+   0.327,
+   0.229
+  ],
+  "content_perturb_n": 96,
+  "content_perturb_edit_norm_mean": 0.168
+ }
+}

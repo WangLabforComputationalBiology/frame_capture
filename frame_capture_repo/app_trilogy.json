@@ -1,0 +1,161 @@
+{
+ "Ax1_prescription": {
+  "desc": "frame-recoded DPO keeps FS at the frame-floor across families",
+  "models": {
+   "qwen15-sft": {
+    "FS": 0.0078,
+    "CS": 0.5245,
+    "n_tasks": 48
+   },
+   "qwen15-dpo": {
+    "FS": 0.0152,
+    "CS": 0.6356,
+    "n_tasks": 48
+   },
+   "qwen15-dpo_frame_v2": {
+    "FS": 0.0079,
+    "CS": 0.5186,
+    "n_tasks": 48
+   },
+   "llama32-sft": {
+    "FS": 0.0071,
+    "CS": 0.3973,
+    "n_tasks": 48
+   },
+   "llama32-dpo": {
+    "FS": 0.0332,
+    "CS": 0.6279,
+    "n_tasks": 48
+   },
+   "llama32-dpo_frame_v2": {
+    "FS": 0.0071,
+    "CS": 0.3949,
+    "n_tasks": 48
+   },
+   "gemma3-4b-it": {
+    "FS": 0.0141,
+    "CS": 0.7173,
+    "n_tasks": 46
+   },
+   "gemma3-4b-dpo_frame_v2": {
+    "FS": 0.0072,
+    "CS": 0.4699,
+    "n_tasks": 48
+   }
+  },
+  "fingerprint_notes": {
+   "qwen15: r(frame_v2,sft)": 0.99,
+   "llama32: r(frame_v2,sft)": 0.998,
+   "gemma: r(frame_v2,sft)": 0.089
+  }
+ },
+ "Ax3_gatekeeper": {
+  "desc": "frame agreement as free confidence: only answer frame-stable items",
+  "models": {
+   "qwen15-base": {
+    "n": 200,
+    "full_acc": 0.2212,
+    "cov_at_full_agree": 0.395,
+    "acc_at_full_agree": 0.2911,
+    "lift_pt": 7.0,
+    "consistent_but_wrong": 56
+   },
+   "qwen15-sft": {
+    "n": 200,
+    "full_acc": 0.2346,
+    "cov_at_full_agree": 0.485,
+    "acc_at_full_agree": 0.2784,
+    "lift_pt": 4.37,
+    "consistent_but_wrong": 70
+   },
+   "qwen15-dpo": {
+    "n": 200,
+    "full_acc": 0.2469,
+    "cov_at_full_agree": 0.515,
+    "acc_at_full_agree": 0.2913,
+    "lift_pt": 4.43,
+    "consistent_but_wrong": 73
+   },
+   "qwen15-dpo_frame_v2": {
+    "n": 200,
+    "full_acc": 0.2377,
+    "cov_at_full_agree": 0.49,
+    "acc_at_full_agree": 0.2755,
+    "lift_pt": 3.78,
+    "consistent_but_wrong": 71
+   },
+   "qwen15-rlvr": {
+    "n": 200,
+    "full_acc": 0.2323,
+    "cov_at_full_agree": 0.495,
+    "acc_at_full_agree": 0.2626,
+    "lift_pt": 3.03,
+    "consistent_but_wrong": 73
+   },
+   "llama32-sft": {
+    "n": 200,
+    "full_acc": 0.2038,
+    "cov_at_full_agree": 0.42,
+    "acc_at_full_agree": 0.25,
+    "lift_pt": 4.62,
+    "consistent_but_wrong": 63
+   },
+   "llama32-dpo": {
+    "n": 200,
+    "full_acc": 0.2077,
+    "cov_at_full_agree": 0.35,
+    "acc_at_full_agree": 0.2143,
+    "lift_pt": 0.66,
+    "consistent_but_wrong": 55
+   },
+   "llama32-dpo_frame_v2": {
+    "n": 200,
+    "full_acc": 0.2025,
+    "cov_at_full_agree": 0.4,
+    "acc_at_full_agree": 0.275,
+    "lift_pt": 7.25,
+    "consistent_but_wrong": 58
+   }
+  }
+ },
+ "Capability_gate": {
+  "GPQA_acc": {
+   "qwen15-sft": 0.0914,
+   "qwen15-dpo": 0.1263,
+   "qwen15-dpo_frame_v2": 0.1077,
+   "llama32-sft": 0.1919,
+   "llama32-dpo": 0.2626,
+   "llama32-dpo_frame_v2": 0.197
+  }
+ },
+ "Ax2_certification": {
+  "desc": "deployment audit: FS battery + floor band + fingerprint + capability gate",
+  "family_floors": {
+   "qwen": 0.008,
+   "llama32": 0.0081,
+   "gemma": 0.0141,
+   "internlm2": 0.0074,
+   "tulu": null,
+   "qwen25": 0.007,
+   "llama31": 0.0153
+  },
+  "ckpt_FS": {
+   "qwen15-base": 0.008,
+   "qwen15-sft": 0.0078,
+   "qwen15-dpo": 0.0152,
+   "qwen15-dpo_frame_v2": 0.0079,
+   "qwen15-rlvr": 0.0079,
+   "llama32-3b-base": 0.0081,
+   "llama32-sft": 0.0071,
+   "llama32-dpo": 0.0332,
+   "llama32-dpo_frame_v2": 0.0071,
+   "gemma3-4b-it": 0.0141,
+   "gemma3-4b-dpo_frame_v2": 0.0072,
+   "internlm2-base": 0.0074,
+   "internlm2-chat": 0.0101,
+   "qwen25-7b-base": 0.007,
+   "qwen25-7b-instruct": 0.016,
+   "llama31-8b-instruct": 0.0153
+  }
+ }
+}

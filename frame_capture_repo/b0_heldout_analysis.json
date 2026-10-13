@@ -1,0 +1,169 @@
+{
+ "models": {
+  "llama32-3b-base": {
+   "n_tasks": 24,
+   "n_seeds": 3,
+   "template_generalization": {
+    "0": 0.732174,
+    "1": 0.870435,
+    "2": 0.754783,
+    "mean_across_seeds": 0.786957,
+    "nat_vs_std": 0.417391
+   },
+   "family_order_generalization": 0.771429,
+   "seed_icc2_1": 0.769911,
+   "seed_pairwise_spearman": {
+    "seed0~seed1": 0.746957,
+    "seed0~seed2": 0.933043,
+    "seed1~seed2": 0.806087
+   },
+   "nf4_vs_bf16_spearman": null,
+   "validity": 1.0,
+   "flip_rate_mean": 0.06891,
+   "fs_all_mean": 0.012359
+  },
+  "llama32-dpo": {
+   "n_tasks": 24,
+   "n_seeds": 3,
+   "template_generalization": {
+    "0": 0.721896,
+    "1": 0.976522,
+    "2": 0.900631,
+    "mean_across_seeds": 0.927826,
+    "nat_vs_std": 0.857391
+   },
+   "family_order_generalization": 0.714286,
+   "seed_icc2_1": 0.345679,
+   "seed_pairwise_spearman": {
+    "seed0~seed1": 0.506087,
+    "seed0~seed2": 0.73913,
+    "seed1~seed2": 0.657391
+   },
+   "nf4_vs_bf16_spearman": null,
+   "validity": 1.0,
+   "flip_rate_mean": 0.083868,
+   "fs_all_mean": 0.066306
+  },
+  "llama32-sft": {
+   "n_tasks": 24,
+   "n_seeds": 3,
+   "template_generalization": {
+    "0": 0.82,
+    "1": 0.914783,
+    "2": 0.79913,
+    "mean_across_seeds": 0.829565,
+    "nat_vs_std": 0.455652
+   },
+   "family_order_generalization": 0.714286,
+   "seed_icc2_1": 0.811202,
+   "seed_pairwise_spearman": {
+    "seed0~seed1": 0.805217,
+    "seed0~seed2": 0.906957,
+    "seed1~seed2": 0.796522
+   },
+   "nf4_vs_bf16_spearman": null,
+   "validity": 1.0,
+   "flip_rate_mean": 0.05235,
+   "fs_all_mean": 0.012622
+  },
+  "qwen15-base": {
+   "n_tasks": 24,
+   "n_seeds": 3,
+   "template_generalization": {
+    "0": 0.774783,
+    "1": 0.801739,
+    "2": 0.822609,
+    "mean_across_seeds": 0.778261,
+    "nat_vs_std": 0.437391
+   },
+   "family_order_generalization": 0.085714,
+   "seed_icc2_1": 0.686126,
+   "seed_pairwise_spearman": {
+    "seed0~seed1": 0.607826,
+    "seed0~seed2": 0.818261,
+    "seed1~seed2": 0.702609
+   },
+   "nf4_vs_bf16_spearman": null,
+   "validity": 1.0,
+   "flip_rate_mean": 0.044338,
+   "fs_all_mean": 0.011601
+  },
+  "qwen15-dpo": {
+   "n_tasks": 24,
+   "n_seeds": 3,
+   "template_generalization": {
+    "0": 0.889565,
+    "1": 0.837391,
+    "2": 0.913913,
+    "mean_across_seeds": 0.876522,
+    "nat_vs_std": 0.895652
+   },
+   "family_order_generalization": 0.257143,
+   "seed_icc2_1": 0.260413,
+   "seed_pairwise_spearman": {
+    "seed0~seed1": 0.792174,
+    "seed0~seed2": 0.863478,
+    "seed1~seed2": 0.798261
+   },
+   "nf4_vs_bf16_spearman": 0.88087,
+   "validity": 1.0,
+   "flip_rate_mean": 0.048611,
+   "fs_all_mean": 0.015574
+  },
+  "qwen15-sft": {
+   "n_tasks": 24,
+   "n_seeds": 3,
+   "template_generalization": {
+    "0": 0.842609,
+    "1": 0.92,
+    "2": 0.877391,
+    "mean_across_seeds": 0.865217,
+    "nat_vs_std": 0.662609
+   },
+   "family_order_generalization": -0.085714,
+   "seed_icc2_1": 0.583579,
+   "seed_pairwise_spearman": {
+    "seed0~seed1": 0.810435,
+    "seed0~seed2": 0.830435,
+    "seed1~seed2": 0.824348
+   },
+   "nf4_vs_bf16_spearman": 0.829565,
+   "validity": 1.0,
+   "flip_rate_mean": 0.043269,
+   "fs_all_mean": 0.009618
+  }
+ },
+ "gates": {
+  "heldout_template_fs_rho_ge_0.80": {
+   "value": 0.778261,
+   "per_model": {
+    "llama32-3b-base": 0.786957,
+    "llama32-dpo": 0.927826,
+    "llama32-sft": 0.829565,
+    "qwen15-base": 0.778261,
+    "qwen15-dpo": 0.876522,
+    "qwen15-sft": 0.865217
+   },
+   "pass": false
+  },
+  "family_order_stable_across_templates": {
+   "value": -0.085714,
+   "pass": false
+  },
+  "readout_direction_consistent": {
+   "value": 0.829565,
+   "pass": true,
+   "note": "bf16 为原生 readout；NF4 为次要看读条件；GPTQ 无本地权重，标注 blocked"
+  },
+  "validity_not_degraded": {
+   "value": 1.0,
+   "pass": true
+  },
+  "seed_family_order_stable": {
+   "note": "见 b0_reanalysis.json seed_icc.family_order_spearman (0.77-0.89)",
+   "pass": true
+  }
+ },
+ "generated": true,
+ "B0_verdict": "FAIL/PARTIAL"
+}

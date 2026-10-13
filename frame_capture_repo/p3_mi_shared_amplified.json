@@ -1,0 +1,72 @@
+{
+ "protocol": "FS_MI per-task DPO/SFT ratio >= 1.5; hypergeometric upper tail, N=48; exact 0log0=0 KL log2 vs frame-mean reference",
+ "nf4": {
+  "qwen_amp": 15,
+  "llama_amp": 14,
+  "qwen_tasks": [
+   "add_1",
+   "add_2",
+   "add_4",
+   "add_5",
+   "counterfactual",
+   "counterfactual_2",
+   "gravity_moon",
+   "highest_mountain",
+   "longest_river",
+   "multiply",
+   "multiply_2",
+   "past_tense",
+   "plural_goose",
+   "subtract",
+   "syllogism_2"
+  ],
+  "llama_tasks": [
+   "add_1",
+   "add_3",
+   "add_4",
+   "add_5",
+   "antibiotic_virus",
+   "freezing_point",
+   "gravity_moon",
+   "logic_neg",
+   "multiply",
+   "multiply_2",
+   "season_spring",
+   "subtract",
+   "syllogism_2",
+   "syllogism_3"
+  ],
+  "shared": [
+   "add_1",
+   "add_4",
+   "add_5",
+   "gravity_moon",
+   "multiply",
+   "multiply_2",
+   "subtract",
+   "syllogism_2"
+  ],
+  "n_shared": 8,
+  "p": 0.017510428277493533
+ },
+ "bf16": {
+  "qwen_amp": 11,
+  "llama_amp": 11,
+  "gemma_amp": 17,
+  "shared_qwen_llama": [
+   "add_1",
+   "add_5",
+   "multiply",
+   "syllogism_2"
+  ],
+  "n_shared_ql": 4,
+  "p_ql": 0.2078341525420015,
+  "shared_all3": [
+   "add_5",
+   "multiply",
+   "syllogism_2"
+  ],
+  "n_shared3": 3,
+  "p_all3": 0.12056737588652482
+ }
+}

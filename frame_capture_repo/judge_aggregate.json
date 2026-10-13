@@ -1,0 +1,355 @@
+{
+  "n": 50,
+  "items": [
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.625,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.625,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.625,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.8571428571428571,
+      "n_verdicts": 13
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 12
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.625,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.5,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.5,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": false,
+      "aggregate": true,
+      "consistency": 0.5,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.625,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.875,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 0.5,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "B",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": false,
+      "aggregate": false,
+      "consistency": 0.75,
+      "n_verdicts": 14
+    },
+    {
+      "correct": "A",
+      "majority": true,
+      "aggregate": true,
+      "consistency": 1.0,
+      "n_verdicts": 14
+    }
+  ]
+}
